@@ -2,13 +2,27 @@ package foodlink.model;
 
 public class FoodItem {
 
+<<<<<<< HEAD
+    private int id;
+=======
     private int foodId;
+>>>>>>> refs/heads/master
     private String name;
     private double price;
     private String shopName;
     private boolean available;
     private int stockQuantity;
 
+<<<<<<< HEAD
+    public FoodItem(
+            int id,
+            String name,
+            double price,
+            String shopName,
+            boolean available) {
+
+        this.id = id;
+=======
     // Constructor used by ShopkeeperService
     public FoodItem(
             int foodId,
@@ -28,6 +42,7 @@ public class FoodItem {
             boolean available,
             int stockQuantity) {
         this.foodId = foodId;
+>>>>>>> refs/heads/master
         this.name = name;
         this.price = price;
         this.shopName = shopName;
@@ -62,6 +77,10 @@ public class FoodItem {
         return foodId;
     }
 
+    public int getId() {
+        return id;
+    }
+
     public String getName() {
         return name;
     }
@@ -78,6 +97,24 @@ public class FoodItem {
         return available;
     }
 
+<<<<<<< HEAD
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public void setShopName(String shopName) {
+        this.shopName = shopName;
+    }
+
+    public void setAvailable(boolean available) {
+        this.available = available;
+    }
+}
+=======
     public int getStockQuantity() {
         return stockQuantity;
     }
@@ -112,3 +149,4 @@ public class FoodItem {
                 + " (Stock: " + stockQuantity + ")";
     }
 }
+>>>>>>> refs/heads/master
